@@ -47,8 +47,8 @@ $('#sizePicker').submit(function(event){
   event.preventDefault();
 
   // get size
-  var height = $('#inputHeight').val();
-  var width = $('#inputWidth').val();
+  let height = $('#inputHeight').val();
+  let width = $('#inputWidth').val();
 
   // create grid
   pA.makeGrid(height, width);

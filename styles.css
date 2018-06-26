@@ -40,6 +40,6 @@ input[type=number] {
 }
 
 #reset {
-    margin: 1em 1em 1em;
+    margin: 1em;
     cursor: pointer;
 }
