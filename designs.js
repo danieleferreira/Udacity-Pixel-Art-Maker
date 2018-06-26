@@ -42,16 +42,18 @@ var pixelArtMaker = {
 var pA = pixelArtMaker;
 
 // When size is submitted, call makeGrid()
-$('#sizePicker').submit(function(event){
+$( document ).ready(function() {
+  $('#sizePicker').submit(function(event){
 
-  event.preventDefault();
+    event.preventDefault();
 
-  // get size
-  let height = $('#inputHeight').val();
-  let width = $('#inputWidth').val();
+    // get size
+    let height = $('#inputHeight').val();
+    let width = $('#inputWidth').val();
 
-  // create grid
-  pA.makeGrid(height, width);
+    // create grid
+    pA.makeGrid(height, width);
+  });
 });
 
 // reset grid
